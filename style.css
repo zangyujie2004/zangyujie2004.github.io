@@ -261,6 +261,14 @@ i, em { font-style: italic; }
   color: var(--color-text);
 }
 
+.profile-role {
+  margin-top: 0.2rem;
+  font-size: var(--fs-base);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 0.01em;
+}
+
 .profile-bio {
   margin-top: 0.75rem;
   color: var(--color-text);
@@ -601,6 +609,10 @@ section[id] {
   .profile-text h1 {
     text-align: center;
     font-size: 1.75rem;
+  }
+
+  .profile-role {
+    text-align: center;
   }
 
   .profile-bio {
