@@ -167,12 +167,16 @@ body {
   padding-bottom: 4rem;
 }
 
-a {
+a,
+a:link,
+a:visited {
   color: var(--color-link);
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active {
+  color: var(--color-accent-hover);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -227,14 +231,17 @@ i, em { font-style: italic; }
   text-align: center;
 }
 
-.profile-links a {
+.profile-links a,
+.profile-links a:link,
+.profile-links a:visited {
   color: var(--color-link);
   font-size: var(--fs-base);
   font-weight: 700;
   line-height: var(--lh-tight);
 }
 
-.profile-links a:hover {
+.profile-links a:hover,
+.profile-links a:active {
   color: #f09228;
   text-decoration: none;
 }
@@ -402,7 +409,9 @@ section[id] {
   margin-top: 0.55rem;
 }
 
-.pub-links .pub-link {
+.pub-links .pub-link,
+.pub-links .pub-link:link,
+.pub-links .pub-link:visited {
   color: var(--color-link);
   font-size: var(--fs-base);
   font-weight: 600;
@@ -410,7 +419,8 @@ section[id] {
   text-decoration: none;
 }
 
-.pub-links .pub-link:hover {
+.pub-links .pub-link:hover,
+.pub-links .pub-link:active {
   color: var(--color-accent);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -491,12 +501,15 @@ section[id] {
   color: var(--color-text-muted);
 }
 
-.exp-description p.exp-pi a {
+.exp-description p.exp-pi a,
+.exp-description p.exp-pi a:link,
+.exp-description p.exp-pi a:visited {
   color: var(--color-link);
   text-decoration: none;
 }
 
-.exp-description p.exp-pi a:hover {
+.exp-description p.exp-pi a:hover,
+.exp-description p.exp-pi a:active {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
