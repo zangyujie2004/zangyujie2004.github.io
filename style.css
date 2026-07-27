@@ -21,9 +21,9 @@ html {
   --color-text-secondary: #444444;
   --color-text-muted: #6b7280;
   --color-border: #e5e7eb;
-  --color-accent: #0b3d91;
-  --color-accent-hover: #082f72;
-  --color-link: #146ebe;
+  --color-accent: #111111;
+  --color-accent-hover: #000000;
+  --color-link: #111111;
   --content-max: 960px;
   --page-gutter: 1.125rem;
   --nav-height: 3.75rem;
@@ -137,7 +137,7 @@ body {
 
 .topnav-links a:hover {
   color: var(--color-accent);
-  background: rgba(11, 61, 145, 0.04);
+  background: rgba(17, 17, 17, 0.04);
   text-decoration: none;
 }
 
@@ -511,7 +511,7 @@ section[id] {
   align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.4rem 0;
+  padding: 0.15rem 0;
   line-height: var(--lh-body);
   font-size: var(--fs-base);
   color: var(--color-text);
