@@ -224,39 +224,25 @@ i, em { font-style: italic; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.28rem;
-  margin-top: 0.75rem;
+  gap: 0.05rem;
+  margin-top: 0.55rem;
   width: 100%;
   text-align: center;
-}
-
-.profile-links-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem 0.45rem;
-  max-width: 100%;
 }
 
 .profile-links a,
 .profile-links a:link,
 .profile-links a:visited {
   color: var(--color-link);
-  font-size: var(--fs-base);
+  font-size: var(--fs-sm);
   font-weight: 700;
-  line-height: var(--lh-tight);
+  line-height: 1.35;
 }
 
 .profile-links a:hover,
 .profile-links a:active {
   color: #f09228;
   text-decoration: none;
-}
-
-.profile-links .link-sep {
-  color: #c2c8d0;
-  font-weight: 400;
-  font-size: var(--fs-base);
 }
 
 .profile-text {
