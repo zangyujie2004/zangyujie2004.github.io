@@ -222,13 +222,20 @@ i, em { font-style: italic; }
 
 .profile-links {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 0.3rem 0.5rem;
+  gap: 0.28rem;
   margin-top: 0.75rem;
   width: 100%;
   text-align: center;
+}
+
+.profile-links-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem 0.45rem;
+  max-width: 100%;
 }
 
 .profile-links a,
