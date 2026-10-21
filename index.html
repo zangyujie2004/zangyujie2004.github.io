@@ -58,7 +58,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css?v=7" />
+  <link rel="stylesheet" href="style.css?v=10" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
@@ -66,6 +66,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <nav id="topnav" class="masthead" aria-label="Primary">
     <div class="topnav-inner">
       <a class="topnav-brand" href="#profile">Yujie Zang</a>
@@ -77,7 +78,7 @@
     </div>
   </nav>
 
-  <div id="main">
+  <main id="main" tabindex="-1">
 
     <!-- ========== Personal Profile ========== -->
     <header id="profile">
@@ -89,7 +90,6 @@
           <a href="https://github.com/zangyujie2004" target="_blank" rel="noopener">GitHub</a>
           <a href="mailto:zangyujie@u.nus.sg">Email</a>
           <a href="https://scholar.google.com/citations?user=WrjUb6cAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
-          <a href="cv/cv.pdf" target="_blank" rel="noopener">CV</a>
         </nav>
       </div>
       <div class="profile-text">
@@ -99,7 +99,7 @@
             I am currently a Master’s student in Robotics at the
             <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">National University of Singapore (NUS)</a>,
             supervised by Prof.&nbsp;Shuicheng Yan.
-            Prior to that, I received my B.Eng. in Industrial Design (Mechanical) from
+            Prior to that, I received my B.Eng. from
             <a href="https://www.sjtu.edu.cn/" target="_blank" rel="noopener">Shanghai Jiao Tong University (SJTU)</a>,
             where I worked with Prof.&nbsp;Xinyang Tan
             and graduated as an Outstanding Graduate in 2026.
@@ -118,7 +118,7 @@
       <!-- ========== Publications ========== -->
       <section id="publications">
       <h2 class="section-heading">Publications</h2>
-      <p class="section-note">(*: corresponding author;&nbsp;&nbsp;†: equal contribution)</p>
+      <p class="section-note">(*: corresponding author;&nbsp;&nbsp;†: equal contribution;&nbsp;&nbsp;‡: project leader)</p>
 
       <div class="pub-list">
 
@@ -130,14 +130,61 @@
             <h3>TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation</h3>
             <p class="pub-meta">
               <b>Yujie Zang</b><sup>†</sup>, Yuhang Zheng<sup>†</sup>, Xian Nie<sup>†</sup>, Yupeng Zheng, Shuai Tian, Songen Gu, Chen Gao,
-              Zining Wang, Shuicheng Yan<sup>*</sup>, and Wenchao Ding<sup>*</sup>.<br />
+              Zining Wang, Shuicheng Yan<sup>*</sup>, and Wenchao Ding<sup>*</sup>.
+              <span class="pub-venue">
               <i>IEEE Robotics and Automation Letters (RA-L)</i>, 2026
-              <span class="venue-status">· Under Review</span>
+              <span class="venue-status venue-status--accepted">Accepted</span></span>
             </p>
             <p class="pub-links">
               <a class="pub-link" href="https://tacforesight.github.io/ProjectPage/" target="_blank" rel="noopener">Webpage</a>
               <a class="pub-link" href="https://arxiv.org/abs/2606.11184" target="_blank" rel="noopener">Paper</a>
               <a class="pub-link" href="https://github.com/TacForeSight/TacForeSight" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="publication">
+          <a class="thumbnail" href="https://interaction-latent-action.github.io/project_page/" target="_blank" rel="noopener" aria-label="ILA project page">
+            <video src="assets/publications/ila.mp4?v=2" poster="assets/publications/ila.jpg?v=2" width="640" height="400" autoplay muted loop playsinline preload="metadata" aria-label="ILA: robot cucumber peeling demonstration at 2× speed">
+              <img src="assets/publications/ila.jpg?v=2" alt="ILA: robot cucumber peeling demonstration" width="640" height="400" loading="lazy" />
+            </video>
+          </a>
+          <div class="project-description">
+            <h3>Interaction Latents as Actions for Contact-Rich Manipulation</h3>
+            <p class="pub-meta">
+              Yuhang Zheng<sup>†</sup>, <b>Yujie Zang</b><sup>†</sup>, Yuchen Liu<sup>†</sup>, Yupeng Zheng,
+              Zhennan Jiang, Zebin Xing, Shuai Tian, Songen Gu, Jingxiang Guo, Chen Gao,
+              Zhongpu Xia<sup>‡</sup>, and Shuicheng Yan<sup>*</sup>.
+              <span class="pub-venue">
+              <i>International Conference on Learning Representations (ICLR)</i>, 2027
+              <span class="venue-status">Under Review</span></span>
+            </p>
+            <p class="pub-links">
+              <a class="pub-link" href="https://interaction-latent-action.github.io/project_page/" target="_blank" rel="noopener">Webpage</a>
+              <a class="pub-link" href="https://arxiv.org/abs/2610.18855" target="_blank" rel="noopener">Paper</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="publication">
+          <a class="thumbnail" href="https://ctp-robotics.github.io/project_page/" target="_blank" rel="noopener" aria-label="Contact Trajectory Prompting project page">
+            <video src="assets/publications/ctp.mp4?v=2" poster="assets/publications/ctp.jpg?v=2" width="640" height="400" autoplay muted loop playsinline preload="metadata" aria-label="Contact Trajectory Prompting: robot bottle-cap rotation demonstration at 1.5× speed">
+              <img src="assets/publications/ctp.jpg?v=2" alt="Contact Trajectory Prompting: robot bottle-cap rotation demonstration" width="640" height="400" loading="lazy" />
+            </video>
+          </a>
+          <div class="project-description">
+            <h3>Contact Trajectory Prompting: In-Context Transfer of Contact-Rich Behaviors from a Single Demonstration</h3>
+            <p class="pub-meta">
+              Xian Nie<sup>†</sup>, <b>Yujie Zang</b><sup>†</sup>, Yuhang Zheng<sup>†</sup>, Yupeng Zheng,
+              Songen Gu, Wendi Chen, Chuan Wen, Cewu Lu, Wenchao Ding, Junchi Yan, and Shuicheng Yan.
+              <span class="pub-venue">
+              <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 2027
+              <span class="venue-status">Under Review</span></span>
+            </p>
+            <p class="pub-links">
+              <a class="pub-link" href="https://ctp-robotics.github.io/project_page/" target="_blank" rel="noopener">Webpage</a>
+              <a class="pub-link" href="https://arxiv.org/abs/2610.18848" target="_blank" rel="noopener">Paper</a>
+              <a class="pub-link" href="https://github.com/ctp-robotics/CTP" target="_blank" rel="noopener">Code</a>
             </p>
           </div>
         </div>
@@ -150,9 +197,10 @@
             <h3>Multimodal Palpation Sensing for Precise Prediction of Breast Lump Hardness and Size</h3>
             <p class="pub-meta">
               <b>Yujie Zang</b>, Shuhong Xiao, Peng Yang, Ying Yang, Zixuan Lu, Ruyue Sun, Chongpeng Wei,
-              Shuyue Zheng, Chen Wang, Xinyang Tan<sup>*</sup>, and Hongwei Zhang<sup>*</sup>.<br />
+              Shuyue Zheng, Chen Wang, Xinyang Tan<sup>*</sup>, and Hongwei Zhang<sup>*</sup>.
+              <span class="pub-venue">
               <i>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, 2026
-              <span class="venue-status">· Accepted</span>
+              <span class="venue-status venue-status--accepted">Accepted</span></span>
             </p>
             <p class="pub-links">
               <a class="pub-link" href="https://ieeexplore.ieee.org/abstract/document/11464121" target="_blank" rel="noopener">Paper</a>
@@ -170,9 +218,10 @@
             <h3>Re-DirectExo: A Preliminary Study of Illusion-Driven Hand Rehabilitation Exoskeleton</h3>
             <p class="pub-meta">
               <b>Yujie Zang</b>, Guiqin Lu, Zhaoyi Chen, Zhen Han, Zihang Ma, Xinyang Tan<sup>*</sup>,
-              and Shi Qiu<sup>*</sup>.<br />
+              and Shi Qiu<sup>*</sup>.
+              <span class="pub-venue">
               <i>International Conference on Human-Engaged Computing (ICHEC), ACM EI</i>, 2025
-              <span class="venue-status">· Accepted</span>
+              <span class="venue-status venue-status--accepted">Accepted</span></span>
             </p>
             <p class="pub-links">
               <a class="pub-link" href="https://dl.acm.org/doi/full/10.1145/3786995.3787023" target="_blank" rel="noopener">Paper</a>
@@ -180,17 +229,19 @@
           </div>
         </div>
 
+        <!-- Temporarily hidden: GAEA-Net. Remove this comment wrapper to restore.
         <div class="publication">
           <a class="thumbnail" href="https://ieeexplore.ieee.org/document/11122114" target="_blank" rel="noopener">
             <img src="assets/publications/ecg.png" alt="Abnormal ECGs" width="272" height="170" loading="lazy" decoding="async" />
           </a>
           <div class="project-description">
-            <h3>Generating Activity-Enriched Abnormal ECGs via Adversarial Network</h3>
+            <h3>GAEA-Net: Generating Activity-Enriched Abnormal ECGs via Adversarial Network</h3>
             <p class="pub-meta">
               Liuqing Chen, Shuhong Xiao, <b>Yujie Zang</b>, Jiner Wang, Shanhai Hu, Lin Zhang, Qing Li,
-              and Danyang Zhang.<br />
-              <i>IEEE Journal of Biomedical and Health Informatics (JBHI)</i>, 2025
-              <span class="venue-status">· Accepted</span>
+              and Danyang Zhang.
+              <span class="pub-venue">
+              <i>IEEE Journal of Biomedical and Health Informatics (JBHI)</i>, 2026
+              <span class="venue-status venue-status--accepted">Accepted</span></span>
             </p>
             <p class="pub-links">
               <a class="pub-link" href="https://ieeexplore.ieee.org/document/11122114" target="_blank" rel="noopener">Paper</a>
@@ -198,6 +249,7 @@
             </p>
           </div>
         </div>
+        -->
 
         <div class="publication">
           <a class="thumbnail" href="https://mrsecant.github.io/OmniVTA/" target="_blank" rel="noopener">
@@ -207,10 +259,12 @@
             <h3>OmniVTA: Visuo-Tactile World Modeling for Contact-Rich Robot Manipulation</h3>
             <p class="pub-meta">
               Yuhang Zheng, Songen Gu, Weize Li, Yupeng Zheng, <b>Yujie Zang</b>, Shuai Tian, Xiang Li,
-              Ruihai Wu, Ce Hao, Chen Gao, Si Liu, Haoran Li, Yilun Chen, Shuicheng Yan<sup>*</sup>,
-              and Wenchao Ding<sup>*</sup>.<br />
+              Ruihai Wu, Ce Hao, Chen Gao, Si Liu, Yilun Chen, Haoran Li, Shuicheng Yan<sup>*</sup>,
+              and Wenchao Ding<sup>*</sup>.
+              <span class="pub-venue">
               <i>IEEE Transactions on Robotics (T-RO)</i>, 2026
-              <span class="venue-status">· Under Review</span>
+              <span class="venue-status venue-status--conditional">Conditionally Accepted</span></span>
+              <strong class="pub-honor">EAI-100 Top 10 Open-Source Embodied AI Dataset, 2025</strong>
             </p>
             <p class="pub-links">
               <a class="pub-link" href="https://mrsecant.github.io/OmniVTA/" target="_blank" rel="noopener">Webpage</a>
@@ -227,9 +281,10 @@
             <h3>VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation</h3>
             <p class="pub-meta">
               Shuai Tian, Yupeng Zheng, Yuhang Zheng, Songen Gu, <b>Yujie Zang</b>, Yuxing Qin, Weize Li,
-              Haoran Li, Wenchao Ding<sup>*</sup>, and Dongbin Zhao<sup>*</sup>.<br />
+              Haoran Li, Wenchao Ding<sup>*</sup>, and Dongbin Zhao<sup>*</sup>.
+              <span class="pub-venue">
               <i>IEEE Robotics and Automation Letters (RA-L)</i>, 2026
-              <span class="venue-status">· Under Review</span>
+              <span class="venue-status">Under Review</span></span>
             </p>
             <p class="pub-links">
               <a class="pub-link" href="https://vt-wam.github.io/" target="_blank" rel="noopener">Webpage</a>
@@ -309,7 +364,7 @@
       </section>
 
     </div>
-  </div>
+  </main>
 
 </body>
 </html>
